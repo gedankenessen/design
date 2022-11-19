@@ -1,0 +1,25 @@
+.design-input,
+.design-input-disabled,
+.design-input-error
+{
+  padding: 16px;
+  min-width: 196px;
+  max-width: 296px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  color: #000;
+}
+
+.design-input {
+  background-color: #D9A621;
+}
+
+.design-input-disabled {
+  background-color: #E2E2E2;
+  border: 2px solid #ABABAB;
+  cursor:not-allowed;
+}
+
+.design-input-error {
+  background-color: #DC3030;
+}

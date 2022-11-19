@@ -1,0 +1,18 @@
+.design-checkbox
+.design-checkbox-disabled,
+.design-checkbox-error {
+  padding: 6px;
+}
+
+.design-checkbox {
+
+}
+
+.design-checkbox-disabled {
+  cursor:not-allowed;
+}
+
+.design-checkbox-error ~ .checkmark {
+  background: #FFFFFF;
+  border: 2px solid #DC3030;
+}

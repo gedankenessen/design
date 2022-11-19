@@ -16,7 +16,7 @@
 }
 
 .design-button-disabled {
-  background-color: #ABABAB;
-  color: black;
+  background-color: #E2E2E2;
+  color: #ABABAB;
   cursor:not-allowed;
 }

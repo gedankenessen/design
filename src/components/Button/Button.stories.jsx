@@ -5,8 +5,6 @@ export default {
   component: Button,
 };
 
-const Template = (args) => <Button {...args}/>
-
 export const Default = {
   args: {
     text: 'Button',
