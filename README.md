@@ -3,6 +3,12 @@
 Repo for components used in gedankenessen websites and applications.
 Check out the storybook [here](https://gedankenessen.github.io/design).
 
+<div align="center" >
+  <a href="https://gedankenessen.github.io/design">
+    <img width="320" alt="Gedankenessen design system" src="https://repository-images.githubusercontent.com/568087024/5a386a5c-ba74-4db7-9216-34dc752468a3">
+  </a>
+</div>
+
 ## Contributing
 ### Installation
 
