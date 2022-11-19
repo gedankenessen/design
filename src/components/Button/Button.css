@@ -1,12 +1,14 @@
 .design-button {
   border: 0;
-  padding: 24px;
+  padding: 16px;
   min-width: 196px;
+  max-width: 296px;
+  font-size: 16px;
+
   background-color: #D9A621;
   color: black;
-  font-size: 16px;
 }
 
 .design-button:active {
-  background-color: gray;
+  background-color: #BCBCBC;
 }
