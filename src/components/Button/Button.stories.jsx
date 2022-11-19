@@ -10,6 +10,7 @@ const Template = (args) => <Button {...args}/>
 export const Default = {
   args: {
     text: 'Button',
+    disabled: false,
   }
 }
 

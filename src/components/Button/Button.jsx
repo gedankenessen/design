@@ -2,7 +2,10 @@ import React from 'react';
 import './Button.css';
 
 export const Button = ({
-  text, theme, disabled = false, ...props
+  text, disabled = false, ...props
 }) => (
-  <button {...props} disabled={disabled} className="design-button">{text}</button>
+  <button
+    {...props}
+    disabled={disabled}
+    className={!disabled ? "design-button" : "design-button-disabled"}>{text}</button>
 )
