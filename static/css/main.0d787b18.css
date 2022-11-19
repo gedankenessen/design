@@ -1,0 +1,25 @@
+.design-button, .design-button-disabled {
+  border: 0;
+  padding: 16px;
+  min-width: 196px;
+  max-width: 296px;
+  font-size: 16px;
+}
+
+.design-button {
+  background-color: #D9A621;
+  color: black;
+}
+
+.design-button:active {
+  background-color: #B48818;
+}
+
+.design-button-disabled {
+  background-color: #ABABAB;
+  color: black;
+  cursor:not-allowed;
+}
+
+
+/*# sourceMappingURL=main.0d787b18.css.map*/
