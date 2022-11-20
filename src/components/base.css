@@ -5,7 +5,9 @@
   --color-background: white;
   --color-active: #B48818;
   --color-disabled: #E2E2E2;
+  --color-disabled-secondary: #ABABAB;
   --color-error: #DC3030;
+  --color-error-secondary: #9B0000;
 
   --color-text: black;
   --color-code: black;

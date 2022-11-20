@@ -1,18 +1,35 @@
-.design-checkbox
+@import '../base.css';
+
+.design-checkbox,
 .design-checkbox-disabled,
 .design-checkbox-error {
-  padding: 6px;
+  accent-color: var(--color-primary);
+  border-radius: 0px;
+  outline: 2px solid var(--color-text);
+  appearance: none;
+  height: 18px;
+  width: 18px;
 }
 
-.design-checkbox {
-
+.design-checkbox:checked {
+  background-color: var(--color-primary);
 }
 
 .design-checkbox-disabled {
+  outline: 2px solid var(--color-disabled);
   cursor:not-allowed;
 }
 
-.design-checkbox-error ~ .checkmark {
-  background: #FFFFFF;
-  border: 2px solid #DC3030;
+.design-checkbox-disabled:checked {
+  background-color: var(--color-disabled);
+  outline: 2px solid var(--color-disabled-secondary);
+}
+
+.design-checkbox-error {
+  background-color: var(--color-error);
+}
+
+.design-checkbox-error:checked {
+  background-color: var(--color-error);
+  outline: 2px solid var(--color-error-secondary);
 }

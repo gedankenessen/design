@@ -2,16 +2,25 @@
 .design-input-disabled,
 .design-input-error
 {
-  padding: 16px;
+  box-sizing: border-box;
+  padding: 2px;
+  padding-left: 4px;
   min-width: 196px;
   max-width: 296px;
-  font-size: 16px;
+  font-size: 12px;
   border: 2px solid #000000;
   color: #000;
+  height: 24px;
 }
 
 .design-input {
   background-color: #D9A621;
+}
+
+.design-input:focus {
+  outline-color:#ABABAB;
+  outline-style: solid;
+  box-shadow: none;
 }
 
 .design-input-disabled {
