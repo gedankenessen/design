@@ -1,0 +1,33 @@
+@import '../base.css';
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .design-horizontal-block-container,
+  .design-horizontal-block-headline,
+  .design-horizontal-block-description {
+    width: 60vw;
+    max-width: var(--size-lg);
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 600px) {
+  .design-horizontal-block-container,
+  .design-horizontal-block-headline,
+  .design-horizontal-block-description {
+    width: var(--size-lg);
+  }
+}
+
+.design-horizontal-blocks-wrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+.design-horizontal-blocks-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  grid-gap: var(--space-6);
+}
