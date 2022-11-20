@@ -1,0 +1,343 @@
+.design-button, .design-button-disabled {
+  border: 0;
+  padding: 16px;
+  min-width: 196px;
+  max-width: 296px;
+  font-size: 16px;
+}
+
+.design-button {
+  background-color: #D9A621;
+  color: black;
+}
+
+.design-button:active {
+  background-color: #B48818;
+}
+
+.design-button-disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+  cursor:not-allowed;
+}
+
+.design-checkbox
+.design-checkbox-disabled,
+.design-checkbox-error {
+  padding: 6px;
+}
+
+.design-checkbox {
+
+}
+
+.design-checkbox-disabled {
+  cursor:not-allowed;
+}
+
+.design-checkbox-error ~ .checkmark {
+  background: #FFFFFF;
+  border: 2px solid #DC3030;
+}
+
+:root {
+  --color-primary: #D9A621;
+  --color-secondary: white;
+  --color-foreground: black;
+  --color-background: white;
+  --color-active: #B48818;
+  --color-disabled: #E2E2E2;
+  --color-error: #DC3030;
+
+  --color-text: black;
+  --color-code: black;
+  --color-code-bg: #E2E2E2;
+  --color-selection-foreground: white;
+  --color-selection-background: black;
+
+  --font-xu: 64px;
+  --font-xx: 32px;
+  --font-xl: 24px;
+  --font-lg: 18px;
+  --font-md: 16px;
+  --font-sm: 14px;
+  --font-sx: 12px;
+
+  --size-sx: 64px;
+  --size-sm: 128px;
+  --size-md: 256px;
+  --size-lg: 296px;
+  --size-xl: 512px;
+
+  --min-width: 64px;
+  --min-width: 1024px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --space-7: 128px;
+  --space-8: 256px;
+
+  /* TODO: Default to Roboto or Arial */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+               sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+               "Courier New", monospace;
+
+
+  /* cannot be used in media queries but nice to have it documented */
+  --breakpoint-desktop: 680px;
+}
+
+h1 {
+  font-size: 64px;
+  font-size: var(--font-xu);
+}
+
+h2 {
+  font-size: 32px;
+  font-size: var(--font-xx);
+}
+
+h3 {
+  font-size: 24px;
+  font-size: var(--font-xl);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font: sans-serif;
+  font-size: 16px;
+  font-size: var(--font-md);
+  overflow-y: scroll;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  color: var(--color-text);
+  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+               sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: var(--font-sans);
+  font-weight: normal;
+  margin: 0;
+  word-wrap: break-word;
+  background: white;
+  background: var(--color-background);
+}
+a {
+  background-color: transparent;
+  color: #D9A621;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+  text-decoration: none;
+}
+abbr[title] {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+  text-decoration: none;
+}
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+  letter-spacing: -0.01em;
+}
+h1 > b {
+  color: #D9A621;
+  color: var(--color-primary);
+}
+img {
+  border-style: none;
+  max-width: 100%;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+               "Courier New", monospace;
+  font-family: var(--font-mono);
+  font-size: 1em;
+}
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  background: hsla(0, 0%, 0%, 0.2);
+  border: none;
+  height: 1px;
+}
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+hgroup,
+img,
+figure,
+fieldset,
+ul,
+ol,
+dl,
+dd,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+ul,
+ol {
+  list-style-position: outside;
+  list-style-image: none;
+}
+pre {
+  margin: 0;
+  padding-left: 16px;
+  padding-left: var(--font-md);
+  padding-right: 16px;
+  padding-right: var(--font-md);
+  padding-bottom: 16px;
+  padding-bottom: var(--font-md);
+  font-size: 0.875rem;
+  background: #E2E2E2;
+  background: var(--color-code-bg);
+  overflow: auto;
+  word-wrap: normal;
+}
+b,
+strong,
+dt,
+th {
+  font-weight: bold;
+}
+
+code {
+  font-size: 0.875rem;
+}
+kbd {
+  font-size: 0.875rem;
+}
+samp {
+  font-size: 0.875rem;
+}
+abbr {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+}
+acronym {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+}
+
+a::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+li::selection,
+span::selection,
+pre::selection {
+  color: white;
+  color: var(--color-selection-foreground);
+  background-color: black;
+  background-color: var(--color-selection-background);
+}
+
+/* Helper classes */
+
+.highlight {
+  color: #D9A621;
+  color: var(--color-primary);
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .design-horizontal-block-container,
+  .design-horizontal-block-headline,
+  .design-horizontal-block-description {
+    width: 60vw;
+    max-width: var(--size-lg);
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 600px) {
+  .design-horizontal-block-container,
+  .design-horizontal-block-headline,
+  .design-horizontal-block-description {
+    width: var(--size-lg);
+  }
+}
+
+.design-horizontal-blocks-wrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+.design-horizontal-blocks-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  grid-gap: var(--space-6);
+}
+
+.design-input,
+.design-input-disabled,
+.design-input-error
+{
+  padding: 16px;
+  min-width: 196px;
+  max-width: 296px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  color: #000;
+}
+
+.design-input {
+  background-color: #D9A621;
+}
+
+.design-input-disabled {
+  background-color: #E2E2E2;
+  border: 2px solid #ABABAB;
+  cursor:not-allowed;
+}
+
+.design-input-error {
+  background-color: #DC3030;
+}
+
+
+/*# sourceMappingURL=main.4c6abf7d.css.map*/
